@@ -27,7 +27,7 @@ vector<int> raw_graph;
 
 void edgeNormalization()
 {   
-//#pragma omp parallel for num_threads(max_threads-1)
+#pragma omp parallel for num_threads(max_threads-1)
     for (int i = 0; i < v_num; i++)
     {
         int start = rowPtr[i];
